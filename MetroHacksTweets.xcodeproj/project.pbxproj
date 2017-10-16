@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		578F1C281ED11759006DB24D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F1C271ED11759006DB24D /* AppDelegate.swift */; };
+		578F1C2A1ED11759006DB24D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F1C291ED11759006DB24D /* ViewController.swift */; };
+		578F1C2D1ED11759006DB24D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578F1C2B1ED11759006DB24D /* Main.storyboard */; };
+		578F1C2F1ED11759006DB24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578F1C2E1ED11759006DB24D /* Assets.xcassets */; };
+		578F1C321ED11759006DB24D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578F1C301ED11759006DB24D /* LaunchScreen.storyboard */; };
+		578F1C3D1ED11759006DB24D /* MetroHacksTweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F1C3C1ED11759006DB24D /* MetroHacksTweetsUITests.swift */; };
+		578F1C4C1ED117A1006DB24D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578F1C481ED117A1006DB24D /* Fabric.framework */; };
+		578F1C4D1ED117A1006DB24D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578F1C491ED117A1006DB24D /* TwitterKit.framework */; };
+		578F1C4E1ED117A1006DB24D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 578F1C4A1ED117A1006DB24D /* TwitterKitResources.bundle */; };
+		578F1C4F1ED117A1006DB24D /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578F1C4B1ED117A1006DB24D /* TwitterCore.framework */; };
+		578F1C511ED117F1006DB24D /* TweetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F1C501ED117F1006DB24D /* TweetLoader.swift */; };
+		578F1C531ED12E7B006DB24D /* MarkovGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F1C521ED12E7B006DB24D /* MarkovGenerator.swift */; };
+		578F1C551ED14A84006DB24D /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F1C541ED14A84006DB24D /* GuessViewController.swift */; };
+		578F1C571ED17C5F006DB24D /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F1C561ED17C5F006DB24D /* EndViewController.swift */; };
+		578F1C591ED185B6006DB24D /* Markov.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F1C581ED185B6006DB24D /* Markov.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		578F1C391ED11759006DB24D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578F1C1C1ED11759006DB24D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578F1C231ED11759006DB24D;
+			remoteInfo = MetroHacksTweets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		578F1C241ED11759006DB24D /* MetroHacksTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetroHacksTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		578F1C271ED11759006DB24D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		578F1C291ED11759006DB24D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		578F1C2C1ED11759006DB24D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		578F1C2E1ED11759006DB24D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		578F1C311ED11759006DB24D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		578F1C331ED11759006DB24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578F1C381ED11759006DB24D /* MetroHacksTweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroHacksTweetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		578F1C3C1ED11759006DB24D /* MetroHacksTweetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroHacksTweetsUITests.swift; sourceTree = "<group>"; };
+		578F1C3E1ED11759006DB24D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578F1C481ED117A1006DB24D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		578F1C491ED117A1006DB24D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		578F1C4A1ED117A1006DB24D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		578F1C4B1ED117A1006DB24D /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		578F1C501ED117F1006DB24D /* TweetLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetLoader.swift; sourceTree = "<group>"; };
+		578F1C521ED12E7B006DB24D /* MarkovGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkovGenerator.swift; sourceTree = "<group>"; };
+		578F1C541ED14A84006DB24D /* GuessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
+		578F1C561ED17C5F006DB24D /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		578F1C581ED185B6006DB24D /* Markov.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Markov.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		578F1C211ED11759006DB24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578F1C4C1ED117A1006DB24D /* Fabric.framework in Frameworks */,
+				578F1C4F1ED117A1006DB24D /* TwitterCore.framework in Frameworks */,
+				578F1C4D1ED117A1006DB24D /* TwitterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578F1C351ED11759006DB24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578F1C1B1ED11759006DB24D = {
+			isa = PBXGroup;
+			children = (
+				578F1C481ED117A1006DB24D /* Fabric.framework */,
+				578F1C491ED117A1006DB24D /* TwitterKit.framework */,
+				578F1C4A1ED117A1006DB24D /* TwitterKitResources.bundle */,
+				578F1C4B1ED117A1006DB24D /* TwitterCore.framework */,
+				578F1C261ED11759006DB24D /* MetroHacksTweets */,
+				578F1C3B1ED11759006DB24D /* MetroHacksTweetsUITests */,
+				578F1C251ED11759006DB24D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		578F1C251ED11759006DB24D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				578F1C241ED11759006DB24D /* MetroHacksTweets.app */,
+				578F1C381ED11759006DB24D /* MetroHacksTweetsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578F1C261ED11759006DB24D /* MetroHacksTweets */ = {
+			isa = PBXGroup;
+			children = (
+				578F1C271ED11759006DB24D /* AppDelegate.swift */,
+				578F1C501ED117F1006DB24D /* TweetLoader.swift */,
+				578F1C521ED12E7B006DB24D /* MarkovGenerator.swift */,
+				578F1C581ED185B6006DB24D /* Markov.swift */,
+				578F1C291ED11759006DB24D /* ViewController.swift */,
+				578F1C541ED14A84006DB24D /* GuessViewController.swift */,
+				578F1C561ED17C5F006DB24D /* EndViewController.swift */,
+				578F1C2B1ED11759006DB24D /* Main.storyboard */,
+				578F1C2E1ED11759006DB24D /* Assets.xcassets */,
+				578F1C301ED11759006DB24D /* LaunchScreen.storyboard */,
+				578F1C331ED11759006DB24D /* Info.plist */,
+			);
+			path = MetroHacksTweets;
+			sourceTree = "<group>";
+		};
+		578F1C3B1ED11759006DB24D /* MetroHacksTweetsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				578F1C3C1ED11759006DB24D /* MetroHacksTweetsUITests.swift */,
+				578F1C3E1ED11759006DB24D /* Info.plist */,
+			);
+			path = MetroHacksTweetsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		578F1C231ED11759006DB24D /* MetroHacksTweets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578F1C411ED11759006DB24D /* Build configuration list for PBXNativeTarget "MetroHacksTweets" */;
+			buildPhases = (
+				578F1C201ED11759006DB24D /* Sources */,
+				578F1C211ED11759006DB24D /* Frameworks */,
+				578F1C221ED11759006DB24D /* Resources */,
+				578F1C471ED1177B006DB24D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetroHacksTweets;
+			productName = MetroHacksTweets;
+			productReference = 578F1C241ED11759006DB24D /* MetroHacksTweets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		578F1C371ED11759006DB24D /* MetroHacksTweetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578F1C441ED11759006DB24D /* Build configuration list for PBXNativeTarget "MetroHacksTweetsUITests" */;
+			buildPhases = (
+				578F1C341ED11759006DB24D /* Sources */,
+				578F1C351ED11759006DB24D /* Frameworks */,
+				578F1C361ED11759006DB24D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				578F1C3A1ED11759006DB24D /* PBXTargetDependency */,
+			);
+			name = MetroHacksTweetsUITests;
+			productName = MetroHacksTweetsUITests;
+			productReference = 578F1C381ED11759006DB24D /* MetroHacksTweetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		578F1C1C1ED11759006DB24D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Aaron Kaufer";
+				TargetAttributes = {
+					578F1C231ED11759006DB24D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = C9VA399HSJ;
+						ProvisioningStyle = Automatic;
+					};
+					578F1C371ED11759006DB24D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 578F1C231ED11759006DB24D;
+					};
+				};
+			};
+			buildConfigurationList = 578F1C1F1ED11759006DB24D /* Build configuration list for PBXProject "MetroHacksTweets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 578F1C1B1ED11759006DB24D;
+			productRefGroup = 578F1C251ED11759006DB24D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				578F1C231ED11759006DB24D /* MetroHacksTweets */,
+				578F1C371ED11759006DB24D /* MetroHacksTweetsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		578F1C221ED11759006DB24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578F1C4E1ED117A1006DB24D /* TwitterKitResources.bundle in Resources */,
+				578F1C321ED11759006DB24D /* LaunchScreen.storyboard in Resources */,
+				578F1C2F1ED11759006DB24D /* Assets.xcassets in Resources */,
+				578F1C2D1ED11759006DB24D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578F1C361ED11759006DB24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		578F1C471ED1177B006DB24D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 24e1bf4d7de64f9078fe24ef5a82ae8247ef7416 9ff81fc47cb0f456333200b97a72fbb275fad282937670298452ec9f29dfbae1";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		578F1C201ED11759006DB24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578F1C571ED17C5F006DB24D /* EndViewController.swift in Sources */,
+				578F1C511ED117F1006DB24D /* TweetLoader.swift in Sources */,
+				578F1C551ED14A84006DB24D /* GuessViewController.swift in Sources */,
+				578F1C2A1ED11759006DB24D /* ViewController.swift in Sources */,
+				578F1C281ED11759006DB24D /* AppDelegate.swift in Sources */,
+				578F1C531ED12E7B006DB24D /* MarkovGenerator.swift in Sources */,
+				578F1C591ED185B6006DB24D /* Markov.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578F1C341ED11759006DB24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578F1C3D1ED11759006DB24D /* MetroHacksTweetsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		578F1C3A1ED11759006DB24D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578F1C231ED11759006DB24D /* MetroHacksTweets */;
+			targetProxy = 578F1C391ED11759006DB24D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		578F1C2B1ED11759006DB24D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578F1C2C1ED11759006DB24D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		578F1C301ED11759006DB24D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578F1C311ED11759006DB24D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		578F1C3F1ED11759006DB24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		578F1C401ED11759006DB24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		578F1C421ED11759006DB24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9VA399HSJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MetroHacksTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKProducts.MetroHacksTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		578F1C431ED11759006DB24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9VA399HSJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MetroHacksTweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKProducts.MetroHacksTweets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		578F1C451ED11759006DB24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MetroHacksTweetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKProducts.MetroHacksTweetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MetroHacksTweets;
+			};
+			name = Debug;
+		};
+		578F1C461ED11759006DB24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MetroHacksTweetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ASKProducts.MetroHacksTweetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MetroHacksTweets;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		578F1C1F1ED11759006DB24D /* Build configuration list for PBXProject "MetroHacksTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578F1C3F1ED11759006DB24D /* Debug */,
+				578F1C401ED11759006DB24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578F1C411ED11759006DB24D /* Build configuration list for PBXNativeTarget "MetroHacksTweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578F1C421ED11759006DB24D /* Debug */,
+				578F1C431ED11759006DB24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		578F1C441ED11759006DB24D /* Build configuration list for PBXNativeTarget "MetroHacksTweetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578F1C451ED11759006DB24D /* Debug */,
+				578F1C461ED11759006DB24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 578F1C1C1ED11759006DB24D /* Project object */;
+}
